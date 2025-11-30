@@ -16,15 +16,23 @@ body{
     width: 450px;
 }
 
-.PlantSidebar::after {
-    content: "";
+.sidebar-overlay {
     position: absolute;
-    inset: 0;
     background: rgba(0,0,0,0.35);
-    pointer-events: none;
     top: 100px;
+    left: 0;
     width: 450px;
     height: 150px;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
+}
 
+.sidebar-logo{
+    width: auto;
+    height: 150px;
+    display: block;
+    padding-left: 100px;
 }
