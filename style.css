@@ -17,11 +17,24 @@ body{
 }
 
 .PlantSidebar{
+    position: relative;
     background-image: url('./images/nature.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 450px;
+}
+
+.footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 12px;
+
 }
 
 .sidebar-overlay {
@@ -50,4 +63,8 @@ body{
     color: white;
     font-family: 'NorseBold', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     padding-top: 32px;
+}
+
+.footer{
+    color: white;
 }
