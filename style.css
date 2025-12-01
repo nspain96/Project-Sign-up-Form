@@ -40,7 +40,7 @@ body{
 .sidebar-overlay {
     position: absolute;
     background: rgba(0,0,0,0.35);
-    top: 100px;
+    top: 100px; /* dark shade is 100px from the top of the plant picture */
     left: 0;
     width: 450px;
     height: 150px;
