@@ -10,6 +10,10 @@ body{
     margin: 0px;
 }
 
+h3{
+    margin-left: 16px;
+}
+
 .main{
     display: flex; 
     min-height: 100vh; 
@@ -100,6 +104,36 @@ font-size: larger;
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.form-label{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #334155 ;
+    margin-left: 16px;
+}
+
+.form-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-input{
+   flex: 1 ;
+   padding: 8px 10px;
+   padding-right: 160px;
+   border: 1px solid #d1d5db;
+   border-radius: 4px;
+   font-size: 14px;
+   background: #fff;
+   margin-left: 16px;
+}
+
+.form-error {
+    color: #b91c1c;
+    font-size: 12px;
+    margin-left: 8px; 
 }
 
 .FormRow1,
