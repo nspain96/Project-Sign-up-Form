@@ -16,6 +16,7 @@ h3{
 
 button{
     display: inline-block;
+    margin-left: 16px;
     padding: 10px 20px;
     background: #4b6b3a;
     color: #fff;
@@ -100,12 +101,19 @@ button{
 
 }
 
+.form-grid > div > div {
+  display: flex;
+  flex-direction: column; /* label on top, input below */
+  gap: 6px;
+}
+
 .paragraphs{
 width: 75% ;
 display: flex;
 flex-direction: column;
 margin-left: 16px;
-margin-top: 120px;
+margin-top: 60px;
+margin-bottom: 60px;
 gap: 16px;
 text-align: left;
 align-items: flex-start;
@@ -180,6 +188,18 @@ font-size: larger;
 .login-link:hover {
   color: #3f5e33;       /* slightly darker on hover (optional) */
   text-decoration: underline;
+}
+
+/* show error only when the input is focused and invalid,
+   or when the form has been validated after a submit attempt */
+.form-input:focus:invalid,
+form.was-validated .form-input:invalid {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 3px rgba(185,28,28,0.08);
+}
+
+.form-grid {
+    gap: 8px;
 }
 
 
